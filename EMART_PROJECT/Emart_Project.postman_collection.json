@@ -1,0 +1,3663 @@
+{
+	"info": {
+		"_postman_id": "cf536a58-755b-4982-8a2b-0db2a0980b35",
+		"name": "Emart_Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33156336"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "admin",
+					"item": [
+						{
+							"name": "register-Admin",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}admin/admin/register-Admin",
+									"host": [
+										"{{basicUrl}}admin"
+									],
+									"path": [
+										"admin",
+										"register-Admin"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "register-Admin",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"firstName\":\"dhaval\",\r\n    \"lastName\":\"solanki\",\r\n    \"gender\":\"Male\",\r\n    \"email\":\"dhaval@test.in\",\r\n    \"password\":\"1234\",\r\n    \"mobileNo\":1234567899\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{basicUrl}}admin/admin/register-Admin",
+											"host": [
+												"{{basicUrl}}admin"
+											],
+											"path": [
+												"admin",
+												"register-Admin"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "379"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"17b-B1hgCGe+bjxGoWpQB2smq4YzIq8\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 13 Apr 2024 03:26:28 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"admin\": {\n        \"firstName\": \"dhaval\",\n        \"lastName\": \"solanki\",\n        \"gender\": \"Male\",\n        \"email\": \"dhaval@test.in\",\n        \"password\": \"$2b$10$F.jmZ3pt8YSnQq4o0DSOE.i3fYs5CxKUV3dxR1GMCa62DYaanNFZ6\",\n        \"mobileNo\": 1234567899,\n        \"isDelete\": false,\n        \"isAdmin\": true,\n        \"_id\": \"6619fb64773d5c60ad849a4b\",\n        \"createdAt\": \"2024-04-13T03:26:28.387Z\",\n        \"updatedAt\": \"2024-04-13T03:26:28.387Z\"\n    },\n    \"message\": \"New Admin Is Added SuccesFully...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "login-Admin",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"email\":\"dhaval@test.in\",\r\n        \"password\":\"1234\"\r\n    }\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{basicUrl}}admin/admin/login-Admin",
+									"host": [
+										"{{basicUrl}}admin"
+									],
+									"path": [
+										"admin",
+										"login-Admin"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "login-Admin",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n        \"email\":\"darshan@test.in\",\r\n        \"password\":\"1234\"\r\n    }\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{basicUrl}}admin/admin/login-Admin",
+											"host": [
+												"{{basicUrl}}admin"
+											],
+											"path": [
+												"admin",
+												"login-Admin"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "206"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"ce-IDbijxjfxAYny67jfWq8STd8VTM\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 13 Apr 2024 03:46:13 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoiNjYxOWZiOTg3NzNkNWM2MGFkODQ5YTRlIiwiaWF0IjoxNzEyOTc5OTczfQ.Pbg4aBHJIZ5mruPalohXWrwBY3TvgQg2tU3ClOWVSO0\",\n    \"message\": \"Admin Login SuccesFully...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "get-All-Admin",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{atoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}admin/admin/get-All-Admin",
+									"host": [
+										"{{basicUrl}}admin"
+									],
+									"path": [
+										"admin",
+										"get-All-Admin"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-All-Admin",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}admin/admin/get-All-Admin",
+											"host": [
+												"{{basicUrl}}admin"
+											],
+											"path": [
+												"admin",
+												"get-All-Admin"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1620"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"654-Zw5AB5qZWgKOjmiUMtnoDCsswew\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 13 Apr 2024 03:47:56 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"6619fb64773d5c60ad849a4b\",\n        \"firstName\": \"dhaval\",\n        \"lastName\": \"solanki\",\n        \"gender\": \"Male\",\n        \"email\": \"dhaval@test.in\",\n        \"password\": \"$2b$10$F.jmZ3pt8YSnQq4o0DSOE.i3fYs5CxKUV3dxR1GMCa62DYaanNFZ6\",\n        \"mobileNo\": 1234567899,\n        \"isDelete\": false,\n        \"isAdmin\": true,\n        \"createdAt\": \"2024-04-13T03:26:28.387Z\",\n        \"updatedAt\": \"2024-04-13T03:26:28.387Z\"\n    },\n    {\n        \"_id\": \"6619fb98773d5c60ad849a4e\",\n        \"firstName\": \"darshan\",\n        \"lastName\": \"chauhan\",\n        \"gender\": \"Male\",\n        \"email\": \"darshan@test.in\",\n        \"password\": \"$2b$10$UgJz88ZQpkH3VNOMs2QG3O9zs/dq21kUtAKk5X2x8KEfky6Wv4QDK\",\n        \"mobileNo\": 1234567899,\n        \"isDelete\": false,\n        \"isAdmin\": true,\n        \"createdAt\": \"2024-04-13T03:27:20.262Z\",\n        \"updatedAt\": \"2024-04-13T03:27:20.262Z\"\n    },\n    {\n        \"_id\": \"6619fbb1773d5c60ad849a51\",\n        \"firstName\": \"vijay\",\n        \"lastName\": \"solanki\",\n        \"gender\": \"Male\",\n        \"email\": \"vijay@test.in\",\n        \"password\": \"$2b$10$Z5tD451niy3aa.3KUJsldOa8hcu.iyR5aanMneLSHsWcSi3AWflyy\",\n        \"mobileNo\": 1234567899,\n        \"isDelete\": false,\n        \"isAdmin\": true,\n        \"createdAt\": \"2024-04-13T03:27:45.244Z\",\n        \"updatedAt\": \"2024-04-13T03:27:45.244Z\"\n    },\n    {\n        \"_id\": \"6619fbd1773d5c60ad849a54\",\n        \"firstName\": \"jenil\",\n        \"lastName\": \"kakadiya\",\n        \"gender\": \"Male\",\n        \"email\": \"jenil@test.in\",\n        \"password\": \"$2b$10$5ZAkaUQ79p6hwV9UjPEWteWCrLza2maZeN3D6J8lVckVjGktE3x1q\",\n        \"mobileNo\": 4637580854,\n        \"isDelete\": false,\n        \"isAdmin\": true,\n        \"createdAt\": \"2024-04-13T03:28:17.611Z\",\n        \"updatedAt\": \"2024-04-13T03:28:17.611Z\"\n    },\n    {\n        \"_id\": \"6619fbf0773d5c60ad849a57\",\n        \"firstName\": \"krish\",\n        \"lastName\": \"ranghani\",\n        \"gender\": \"Male\",\n        \"email\": \"krish@test.in\",\n        \"password\": \"$2b$10$ivVfNflPmZz.UNUqxC1FOeHusKwFnOSn8ceNgKkcK61MI54uXeNye\",\n        \"mobileNo\": 46349165488,\n        \"isDelete\": false,\n        \"isAdmin\": true,\n        \"createdAt\": \"2024-04-13T03:28:48.705Z\",\n        \"updatedAt\": \"2024-04-13T03:28:48.705Z\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "get-Admin",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{atoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}admin/admin/get-Admin?adminId=6619fb64773d5c60ad849a4b",
+									"host": [
+										"{{basicUrl}}admin"
+									],
+									"path": [
+										"admin",
+										"get-Admin"
+									],
+									"query": [
+										{
+											"key": "adminId",
+											"value": "6619fb64773d5c60ad849a4b"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-Admin",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}admin/admin/get-Admin?adminId=6619fb64773d5c60ad849a4b",
+											"host": [
+												"{{basicUrl}}admin"
+											],
+											"path": [
+												"admin",
+												"get-Admin"
+											],
+											"query": [
+												{
+													"key": "adminId",
+													"value": "6619fb64773d5c60ad849a4b"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "323"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"143-tLZZ118R6JFrAZPIaY30xEgzkLM\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 13 Apr 2024 03:48:58 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"6619fb64773d5c60ad849a4b\",\n    \"firstName\": \"dhaval\",\n    \"lastName\": \"solanki\",\n    \"gender\": \"Male\",\n    \"email\": \"dhaval@test.in\",\n    \"password\": \"$2b$10$F.jmZ3pt8YSnQq4o0DSOE.i3fYs5CxKUV3dxR1GMCa62DYaanNFZ6\",\n    \"mobileNo\": 1234567899,\n    \"isDelete\": false,\n    \"isAdmin\": true,\n    \"createdAt\": \"2024-04-13T03:26:28.387Z\",\n    \"updatedAt\": \"2024-04-13T03:26:28.387Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "update-Admin",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{atoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"firstName\":\"krishhh\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{basicUrl}}admin/admin/update-Admin?adminId=6619fbf0773d5c60ad849a57",
+									"host": [
+										"{{basicUrl}}admin"
+									],
+									"path": [
+										"admin",
+										"update-Admin"
+									],
+									"query": [
+										{
+											"key": "adminId",
+											"value": "6619fbf0773d5c60ad849a57"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "update-Admin",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"firstName\":\"krishhh\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{basicUrl}}admin/admin/update-Admin?adminId=6619fbf0773d5c60ad849a57",
+											"host": [
+												"{{basicUrl}}admin"
+											],
+											"path": [
+												"admin",
+												"update-Admin"
+											],
+											"query": [
+												{
+													"key": "adminId",
+													"value": "6619fbf0773d5c60ad849a57"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "377"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"179-a4SzIfCYBUu7cbOY9qt630aHA3k\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 13 Apr 2024 03:50:58 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"admin\": {\n        \"_id\": \"6619fbf0773d5c60ad849a57\",\n        \"firstName\": \"krishhh\",\n        \"lastName\": \"ranghani\",\n        \"gender\": \"Male\",\n        \"email\": \"krish@test.in\",\n        \"password\": \"$2b$10$ivVfNflPmZz.UNUqxC1FOeHusKwFnOSn8ceNgKkcK61MI54uXeNye\",\n        \"mobileNo\": 46349165488,\n        \"isDelete\": false,\n        \"isAdmin\": true,\n        \"createdAt\": \"2024-04-13T03:28:48.705Z\",\n        \"updatedAt\": \"2024-04-13T03:50:58.917Z\"\n    },\n    \"message\": \"Admin Updated Successfully...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "delete-Admin",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{atoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}admin/admin/delete-Admin?adminId=6619fbf0773d5c60ad849a57",
+									"host": [
+										"{{basicUrl}}admin"
+									],
+									"path": [
+										"admin",
+										"delete-Admin"
+									],
+									"query": [
+										{
+											"key": "adminId",
+											"value": "6619fbf0773d5c60ad849a57"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "delete-Admin",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}admin/admin/delete-Admin?adminId=6619fbf0773d5c60ad849a57",
+											"host": [
+												"{{basicUrl}}admin"
+											],
+											"path": [
+												"admin",
+												"delete-Admin"
+											],
+											"query": [
+												{
+													"key": "adminId",
+													"value": "6619fbf0773d5c60ad849a57"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "375"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"177-x4IP+d7GyHIsM0qkZ2mhZ0fQuOw\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 13 Apr 2024 03:52:19 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"admin\": {\n        \"_id\": \"6619fbf0773d5c60ad849a57\",\n        \"firstName\": \"krishhh\",\n        \"lastName\": \"ranghani\",\n        \"gender\": \"Male\",\n        \"email\": \"krish@test.in\",\n        \"password\": \"$2b$10$ivVfNflPmZz.UNUqxC1FOeHusKwFnOSn8ceNgKkcK61MI54uXeNye\",\n        \"mobileNo\": 46349165488,\n        \"isDelete\": true,\n        \"isAdmin\": true,\n        \"createdAt\": \"2024-04-13T03:28:48.705Z\",\n        \"updatedAt\": \"2024-04-13T03:52:19.406Z\"\n    },\n    \"message\": \"Admin Deleted Succesfully...\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "product",
+					"item": [
+						{
+							"name": "add-product",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}admin/products/add-product",
+									"host": [
+										"{{basicUrl}}admin"
+									],
+									"path": [
+										"products",
+										"add-product"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "add-product",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"title\":\"Moduler Bathtub\",\r\n    \"description\":\"Dunder buy-in first invested\",\r\n    \"price\":5770,\r\n    \"category\":[\"aesthetics\",\"traditional\"],\r\n    \"size\":\"46 cm,152 cm\",\r\n    \"color\":\"White,Blue,Green\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{basicUrl}}admin/product/add-Product",
+											"host": [
+												"{{basicUrl}}admin"
+											],
+											"path": [
+												"product",
+												"add-Product"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "356"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"164-Qc/8pyf57mQrOCZd6CattO+3qt0\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 03:34:02 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"product\": {\n        \"title\": \"Moduler Bathtub\",\n        \"description\": \"Dunder buy-in first invested\",\n        \"price\": 5770,\n        \"category\": [\n            \"aesthetics\",\n            \"traditional\"\n        ],\n        \"size\": \"46 cm,152 cm\",\n        \"color\": \"White,Blue,Green\",\n        \"isDelete\": false,\n        \"_id\": \"6625daaa6a651beb42aac296\",\n        \"createdAt\": \"2024-04-22T03:34:02.213Z\",\n        \"updatedAt\": \"2024-04-22T03:34:02.213Z\"\n    },\n    \"message\": \"Product Added Successfully...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "get-All-Product",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{atoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}admin/product/get-All-Product",
+									"host": [
+										"{{basicUrl}}admin"
+									],
+									"path": [
+										"product",
+										"get-All-Product"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-All-Product",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}admin/product/get-All-Product",
+											"host": [
+												"{{basicUrl}}admin"
+											],
+											"path": [
+												"product",
+												"get-All-Product"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "3057"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"bf1-PTPyj/ud1og1BaUipH7gdNmAwRM\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 03:56:33 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"totalCounts\": 10,\n    \"totalPages\": 1,\n    \"currentPage\": 1,\n    \"result\": [\n        {\n            \"_id\": \"6625daaa6a651beb42aac296\",\n            \"title\": \"Moduler Bathtub\",\n            \"description\": \"Dunder buy-in first invested\",\n            \"price\": 5770,\n            \"category\": [\n                \"aesthetics\",\n                \"traditional\"\n            ],\n            \"size\": \"46 cm,152 cm\",\n            \"color\": \"White,Blue,Green\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:34:02.213Z\",\n            \"updatedAt\": \"2024-04-22T03:34:02.213Z\"\n        },\n        {\n            \"_id\": \"6625db476a651beb42aac29a\",\n            \"title\": \"Round Neck T-shirt\",\n            \"description\": \"Creep procrastinating break support sky.\",\n            \"price\": 800,\n            \"category\": [\n                \"smooth\",\n                \"cotton\"\n            ],\n            \"size\": \"s, m, l\",\n            \"color\": \"White,Blue,Green\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:36:39.907Z\",\n            \"updatedAt\": \"2024-04-22T03:36:39.907Z\"\n        },\n        {\n            \"_id\": \"6625dbbb6a651beb42aac29e\",\n            \"title\": \"Check-Scarf\",\n            \"description\": \"Typically made from soft.\",\n            \"price\": 500,\n            \"category\": [\n                \"smooth\",\n                \"silk\"\n            ],\n            \"size\": \"s, m\",\n            \"color\": \"White,Blue,Black,Red\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:38:35.492Z\",\n            \"updatedAt\": \"2024-04-22T03:38:35.492Z\"\n        },\n        {\n            \"_id\": \"6625dc0f6a651beb42aac2a2\",\n            \"title\": \"Tote Bag\",\n            \"description\": \"Typically made from soft.\",\n            \"price\": 1000,\n            \"category\": [\n                \"unique\",\n                \"good\"\n            ],\n            \"size\": \"small, jumbo\",\n            \"color\": \"Blue,Black,gray\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:39:59.032Z\",\n            \"updatedAt\": \"2024-04-22T03:39:59.032Z\"\n        },\n        {\n            \"_id\": \"6625dc996a651beb42aac2a6\",\n            \"title\": \"Round Hat\",\n            \"description\": \"also known as a bowler hat or derby hat.\",\n            \"price\": 1500,\n            \"category\": [\n                \"unique\",\n                \"round\"\n            ],\n            \"size\": \"s, m\",\n            \"color\": \"Blue,Black,Gray,Pink, Purpule\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:42:17.513Z\",\n            \"updatedAt\": \"2024-04-22T03:42:17.513Z\"\n        },\n        {\n            \"_id\": \"6625dd816a651beb42aac2aa\",\n            \"title\": \"Sneakers\",\n            \"description\": \"Sneakers, the beloved footwear choice for comfort and style.\",\n            \"price\": 5000,\n            \"category\": [\n                \"fashion\",\n                \"footwear\"\n            ],\n            \"size\": \"s, m, l\",\n            \"color\": \"Blue,Black,Yello\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:46:09.117Z\",\n            \"updatedAt\": \"2024-04-22T03:46:09.117Z\"\n        },\n        {\n            \"_id\": \"6625ddf36a651beb42aac2ae\",\n            \"title\": \"Women Grey-Hill\",\n            \"description\": \" particular style or design of footwear.\",\n            \"price\": 2500,\n            \"category\": [\n                \"fashion\",\n                \"footwear\"\n            ],\n            \"size\": \"7, 8, 9, 10\",\n            \"color\": \"grey\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:48:03.021Z\",\n            \"updatedAt\": \"2024-04-22T03:48:03.021Z\"\n        },\n        {\n            \"_id\": \"6625de7d6a651beb42aac2b2\",\n            \"title\": \"Sports-Slacks\",\n            \"description\": \" the epitome of versatility and style in active attire.\",\n            \"price\": 3000,\n            \"category\": [\n                \"fashion\",\n                \"bottoms\"\n            ],\n            \"size\": \"28, 30 ,32, 34\",\n            \"color\": \"Grey,Black,Blue\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:50:21.254Z\",\n            \"updatedAt\": \"2024-04-22T03:50:21.254Z\"\n        },\n        {\n            \"_id\": \"6625df216a651beb42aac2b6\",\n            \"title\": \"Sleevless T-shirt\",\n            \"description\": \"clothing for warm weather and active lifestyles.\",\n            \"price\": 570,\n            \"category\": [\n                \"Smooth\",\n                \"Tops\"\n            ],\n            \"size\": \"s, m, l\",\n            \"color\": \"Grey,Green,White\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:53:05.700Z\",\n            \"updatedAt\": \"2024-04-22T03:53:05.700Z\"\n        },\n        {\n            \"_id\": \"6625dfb16a651beb42aac2ba\",\n            \"title\": \"Stylish Earring\",\n            \"description\": \"collection of stylish earrings.\",\n            \"price\": 570,\n            \"category\": [\n                \"versatile\",\n                \"chic\"\n            ],\n            \"size\": \"m\",\n            \"color\": \"Silvet,Golden\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:55:29.962Z\",\n            \"updatedAt\": \"2024-04-22T03:55:29.962Z\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "get-Product",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{atoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}admin/product/get-Product?productId=6625daaa6a651beb42aac296",
+									"host": [
+										"{{basicUrl}}admin"
+									],
+									"path": [
+										"product",
+										"get-Product"
+									],
+									"query": [
+										{
+											"key": "productId",
+											"value": "6625daaa6a651beb42aac296"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-Product",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}admin/product/get-Product?productId=6625daaa6a651beb42aac296",
+											"host": [
+												"{{basicUrl}}admin"
+											],
+											"path": [
+												"product",
+												"get-Product"
+											],
+											"query": [
+												{
+													"key": "productId",
+													"value": "6625daaa6a651beb42aac296"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "302"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"12e-R773Hn0OcR58t9OWeFhFox9cwEc\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 03:57:51 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"6625daaa6a651beb42aac296\",\n    \"title\": \"Moduler Bathtub\",\n    \"description\": \"Dunder buy-in first invested\",\n    \"price\": 5770,\n    \"category\": [\n        \"aesthetics\",\n        \"traditional\"\n    ],\n    \"size\": \"46 cm,152 cm\",\n    \"color\": \"White,Blue,Green\",\n    \"isDelete\": false,\n    \"createdAt\": \"2024-04-22T03:34:02.213Z\",\n    \"updatedAt\": \"2024-04-22T03:34:02.213Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "update-Product",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{atoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"price\":600\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{basicUrl}}admin/product/update-Product?productId=6625dfb16a651beb42aac2ba",
+									"host": [
+										"{{basicUrl}}admin"
+									],
+									"path": [
+										"product",
+										"update-Product"
+									],
+									"query": [
+										{
+											"key": "productId",
+											"value": "6625dfb16a651beb42aac2ba"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "update-Product",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"price\":600\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{basicUrl}}admin/product/update-Product?productId=6625dfb16a651beb42aac2ba",
+											"host": [
+												"{{basicUrl}}admin"
+											],
+											"path": [
+												"product",
+												"update-Product"
+											],
+											"query": [
+												{
+													"key": "productId",
+													"value": "6625dfb16a651beb42aac2ba"
+												}
+											]
+										}
+									},
+									"status": "Accepted",
+									"code": 202,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "336"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"150-To//hGcpjth40efNXhMO/+wHDm8\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 03:59:52 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"product\": {\n        \"_id\": \"6625dfb16a651beb42aac2ba\",\n        \"title\": \"Stylish Earring\",\n        \"description\": \"collection of stylish earrings.\",\n        \"price\": 600,\n        \"category\": [\n            \"versatile\",\n            \"chic\"\n        ],\n        \"size\": \"m\",\n        \"color\": \"Silvet,Golden\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-22T03:55:29.962Z\",\n        \"updatedAt\": \"2024-04-22T03:59:52.815Z\"\n    },\n    \"message\": \"Product updated successfully.\"\n}"
+								}
+							]
+						},
+						{
+							"name": "delete-Product",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{atoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}admin/product/delete-Product?productId=6625dfb16a651beb42aac2ba",
+									"host": [
+										"{{basicUrl}}admin"
+									],
+									"path": [
+										"product",
+										"delete-Product"
+									],
+									"query": [
+										{
+											"key": "productId",
+											"value": "6625dfb16a651beb42aac2ba"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "delete-Product",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}admin/product/delete-Product?productId=6625dfb16a651beb42aac2ba",
+											"host": [
+												"{{basicUrl}}admin"
+											],
+											"path": [
+												"product",
+												"delete-Product"
+											],
+											"query": [
+												{
+													"key": "productId",
+													"value": "6625dfb16a651beb42aac2ba"
+												}
+											]
+										}
+									},
+									"status": "Accepted",
+									"code": 202,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "335"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"14f-XGIV69RTDoefoJnrDelLrGfDt4I\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 04:00:54 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"product\": {\n        \"_id\": \"6625dfb16a651beb42aac2ba\",\n        \"title\": \"Stylish Earring\",\n        \"description\": \"collection of stylish earrings.\",\n        \"price\": 600,\n        \"category\": [\n            \"versatile\",\n            \"chic\"\n        ],\n        \"size\": \"m\",\n        \"color\": \"Silvet,Golden\",\n        \"isDelete\": true,\n        \"createdAt\": \"2024-04-22T03:55:29.962Z\",\n        \"updatedAt\": \"2024-04-22T04:00:54.027Z\"\n    },\n    \"message\": \"Product deleted successfully.\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "cart",
+					"item": [
+						{
+							"name": "get-All-Cart",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{atoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}admin/cart/get-All-Cart",
+									"host": [
+										"{{basicUrl}}admin"
+									],
+									"path": [
+										"cart",
+										"get-All-Cart"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-All-Cart",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}admin/cart/get-All-Cart",
+											"host": [
+												"{{basicUrl}}admin"
+											],
+											"path": [
+												"cart",
+												"get-All-Cart"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "2358"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"936-3Qpx/nR83/XY9jGEE/UlT2FNmWk\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 04:26:23 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"6625e4c4c1a297738eb3c250\",\n        \"user\": {\n            \"_id\": \"661a0436e0b30313d7329edc\",\n            \"firstName\": \"monika\",\n            \"lastName\": \"kathiriya\",\n            \"gender\": \"Female\",\n            \"email\": \"moni@test.in\",\n            \"password\": \"$2b$10$28cZ2rFqHSeIKcFcTDncXeLQepGkl.agU8Q05nasUagfhRCYEH9YO\",\n            \"mobileNo\": 464572653673,\n            \"isDelete\": false,\n            \"isAdmin\": false,\n            \"createdAt\": \"2024-04-13T04:04:06.153Z\",\n            \"updatedAt\": \"2024-04-13T04:04:06.153Z\"\n        },\n        \"cartItem\": {\n            \"_id\": \"6625daaa6a651beb42aac296\",\n            \"title\": \"Moduler Bathtub\",\n            \"description\": \"Dunder buy-in first invested\",\n            \"price\": 5770,\n            \"category\": [\n                \"aesthetics\",\n                \"traditional\"\n            ],\n            \"size\": \"46 cm,152 cm\",\n            \"color\": \"White,Blue,Green\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:34:02.213Z\",\n            \"updatedAt\": \"2024-04-22T03:34:02.213Z\"\n        },\n        \"quantity\": 3,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-22T04:17:08.632Z\",\n        \"updatedAt\": \"2024-04-22T04:23:08.317Z\"\n    },\n    {\n        \"_id\": \"6625e4ebc1a297738eb3c255\",\n        \"user\": {\n            \"_id\": \"661a0436e0b30313d7329edc\",\n            \"firstName\": \"monika\",\n            \"lastName\": \"kathiriya\",\n            \"gender\": \"Female\",\n            \"email\": \"moni@test.in\",\n            \"password\": \"$2b$10$28cZ2rFqHSeIKcFcTDncXeLQepGkl.agU8Q05nasUagfhRCYEH9YO\",\n            \"mobileNo\": 464572653673,\n            \"isDelete\": false,\n            \"isAdmin\": false,\n            \"createdAt\": \"2024-04-13T04:04:06.153Z\",\n            \"updatedAt\": \"2024-04-13T04:04:06.153Z\"\n        },\n        \"cartItem\": {\n            \"_id\": \"6625db476a651beb42aac29a\",\n            \"title\": \"Round Neck T-shirt\",\n            \"description\": \"Creep procrastinating break support sky.\",\n            \"price\": 800,\n            \"category\": [\n                \"smooth\",\n                \"cotton\"\n            ],\n            \"size\": \"s, m, l\",\n            \"color\": \"White,Blue,Green\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:36:39.907Z\",\n            \"updatedAt\": \"2024-04-22T03:36:39.907Z\"\n        },\n        \"quantity\": 3,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-22T04:17:47.441Z\",\n        \"updatedAt\": \"2024-04-22T04:17:47.441Z\"\n    },\n    {\n        \"_id\": \"6625e50fc1a297738eb3c25a\",\n        \"user\": {\n            \"_id\": \"661a0436e0b30313d7329edc\",\n            \"firstName\": \"monika\",\n            \"lastName\": \"kathiriya\",\n            \"gender\": \"Female\",\n            \"email\": \"moni@test.in\",\n            \"password\": \"$2b$10$28cZ2rFqHSeIKcFcTDncXeLQepGkl.agU8Q05nasUagfhRCYEH9YO\",\n            \"mobileNo\": 464572653673,\n            \"isDelete\": false,\n            \"isAdmin\": false,\n            \"createdAt\": \"2024-04-13T04:04:06.153Z\",\n            \"updatedAt\": \"2024-04-13T04:04:06.153Z\"\n        },\n        \"cartItem\": {\n            \"_id\": \"6625dc0f6a651beb42aac2a2\",\n            \"title\": \"Tote Bag\",\n            \"description\": \"Typically made from soft.\",\n            \"price\": 1000,\n            \"category\": [\n                \"unique\",\n                \"good\"\n            ],\n            \"size\": \"small, jumbo\",\n            \"color\": \"Blue,Black,gray\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:39:59.032Z\",\n            \"updatedAt\": \"2024-04-22T03:39:59.032Z\"\n        },\n        \"quantity\": 4,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-22T04:18:23.487Z\",\n        \"updatedAt\": \"2024-04-22T04:18:23.487Z\"\n    }\n]"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "review",
+					"item": [
+						{
+							"name": "get-all-Review",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{utoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}admin/review/get-all-Review",
+									"host": [
+										"{{basicUrl}}admin"
+									],
+									"path": [
+										"review",
+										"get-all-Review"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-all-Review",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}admin/review/get-all-Review",
+											"host": [
+												"{{basicUrl}}admin"
+											],
+											"path": [
+												"review",
+												"get-all-Review"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "484"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1e4-t41/UHC0iMcr3+I8sX7twFCmc+w\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 06:11:14 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"6625fdb093968c71322ea926\",\n        \"user\": \"661a0436e0b30313d7329edc\",\n        \"product\": \"6625daaa6a651beb42aac296\",\n        \"rating\": 4,\n        \"comment\": \"good product\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-22T06:03:28.068Z\",\n        \"updatedAt\": \"2024-04-22T06:03:28.068Z\"\n    },\n    {\n        \"_id\": \"6625fe0d93968c71322ea92a\",\n        \"user\": \"661a0436e0b30313d7329edc\",\n        \"product\": \"6625db476a651beb42aac29a\",\n        \"rating\": 3,\n        \"comment\": \"very smooth and fresh\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-22T06:05:01.972Z\",\n        \"updatedAt\": \"2024-04-22T06:08:28.853Z\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "delete-Review",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{atoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}admin/review/delete-Review?Id=6625fe0d93968c71322ea92a",
+									"host": [
+										"{{basicUrl}}admin"
+									],
+									"path": [
+										"review",
+										"delete-Review"
+									],
+									"query": [
+										{
+											"key": "Id",
+											"value": "6625fe0d93968c71322ea92a"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "delete-Review",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}admin/review/delete-Review?Id=6625fe0d93968c71322ea92a",
+											"host": [
+												"{{basicUrl}}admin"
+											],
+											"path": [
+												"review",
+												"delete-Review"
+											],
+											"query": [
+												{
+													"key": "Id",
+													"value": "6625fe0d93968c71322ea92a"
+												}
+											]
+										}
+									},
+									"status": "Accepted",
+									"code": 202,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "301"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"12d-OUk7e087FIetmZIclN3ulH02fYc\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 06:12:25 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"review\": {\n        \"_id\": \"6625fe0d93968c71322ea92a\",\n        \"user\": \"661a0436e0b30313d7329edc\",\n        \"product\": \"6625db476a651beb42aac29a\",\n        \"rating\": 3,\n        \"comment\": \"very smooth and fresh\",\n        \"isDelete\": true,\n        \"createdAt\": \"2024-04-22T06:05:01.972Z\",\n        \"updatedAt\": \"2024-04-22T06:12:25.106Z\"\n    },\n    \"Message\": \"Review is Deleted SuccessFully...\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "wishlist",
+					"item": [
+						{
+							"name": "get-All-Wishlist",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}admin/wishlist/get-All-Wishlist",
+									"host": [
+										"{{basicUrl}}admin"
+									],
+									"path": [
+										"wishlist",
+										"get-All-Wishlist"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-All-Wishlist",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}admin/wishlist/get-All-Wishlist",
+											"host": [
+												"{{basicUrl}}admin"
+											],
+											"path": [
+												"wishlist",
+												"get-All-Wishlist"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "603"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"25b-TZazw6wjYarIIhcSoir0eTkeYhU\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 06:28:25 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"6626019d54b9674cf2559bfb\",\n        \"user\": \"661a0436e0b30313d7329edc\",\n        \"product\": \"6625daaa6a651beb42aac296\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-22T06:20:13.223Z\",\n        \"updatedAt\": \"2024-04-22T06:20:13.223Z\"\n    },\n    {\n        \"_id\": \"662601bc54b9674cf2559bff\",\n        \"user\": \"661a0436e0b30313d7329edc\",\n        \"product\": \"6625db476a651beb42aac29a\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-22T06:20:44.621Z\",\n        \"updatedAt\": \"2024-04-22T06:20:44.621Z\"\n    },\n    {\n        \"_id\": \"662601d254b9674cf2559c03\",\n        \"user\": \"661a0436e0b30313d7329edc\",\n        \"product\": \"6625dbbb6a651beb42aac29e\",\n        \"isDelete\": true,\n        \"createdAt\": \"2024-04-22T06:21:06.613Z\",\n        \"updatedAt\": \"2024-04-22T06:24:00.255Z\"\n    }\n]"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "user",
+					"item": [
+						{
+							"name": "register-User",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"firstName\":\"monika\",\r\n    \"lastName\":\"kathiriya\",\r\n    \"gender\":\"Female\",\r\n    \"email\":\"moni@test.in\",\r\n    \"password\":\"1234\",\r\n    \"mobileNo\":464572653673\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{basicUrl}}user/user/register-User",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"user",
+										"register-User"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "register-User",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"firstName\":\"monika\",\r\n    \"lastName\":\"kathiriya\",\r\n    \"gender\":\"Female\",\r\n    \"email\":\"moni@test.in\",\r\n    \"password\":\"1234\",\r\n    \"mobileNo\":464572653673\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{basicUrl}}user/user/register-User",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"user",
+												"register-User"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "383"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"17f-33oQ7Huj7LAF8bt87iiOSYiLnug\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 13 Apr 2024 04:04:06 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"admin\": {\n        \"firstName\": \"monika\",\n        \"lastName\": \"kathiriya\",\n        \"gender\": \"Female\",\n        \"email\": \"moni@test.in\",\n        \"password\": \"$2b$10$28cZ2rFqHSeIKcFcTDncXeLQepGkl.agU8Q05nasUagfhRCYEH9YO\",\n        \"mobileNo\": 464572653673,\n        \"isDelete\": false,\n        \"isAdmin\": false,\n        \"_id\": \"661a0436e0b30313d7329edc\",\n        \"createdAt\": \"2024-04-13T04:04:06.153Z\",\n        \"updatedAt\": \"2024-04-13T04:04:06.153Z\"\n    },\n    \"message\": \"New User Is Added SuccesFully...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "login-User",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"moni@test.in\",\r\n    \"password\":\"1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{basicUrl}}user/user/login-User",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"user",
+										"login-User"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "login-User",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"email\":\"moni@test.in\",\r\n    \"password\":\"1234\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{basicUrl}}user/user/login-User",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"user",
+												"login-User"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "203"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"cb-PhhXSayYsgVHEFZ0W/afEoQ07jE\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 13 Apr 2024 04:10:26 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjFhMDQzNmUwYjMwMzEzZDczMjllZGMiLCJpYXQiOjE3MTI5ODE0MjZ9.izmKdlrfD8G0tKrF0BQCsgtGLmg1GxUkYW7tTYhS-4E\",\n    \"message\": \"User Login SuccesFully...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "get-All-User",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{utoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}user/user/get-All-User",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"user",
+										"get-All-User"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-All-User",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}user/user/get-All-User",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"user",
+												"get-All-User"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1624"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"658-7/yjxkqLQLtT5J9x8W084ICuClE\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 13 Apr 2024 04:12:58 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"661a0436e0b30313d7329edc\",\n        \"firstName\": \"monika\",\n        \"lastName\": \"kathiriya\",\n        \"gender\": \"Female\",\n        \"email\": \"moni@test.in\",\n        \"password\": \"$2b$10$28cZ2rFqHSeIKcFcTDncXeLQepGkl.agU8Q05nasUagfhRCYEH9YO\",\n        \"mobileNo\": 464572653673,\n        \"isDelete\": false,\n        \"isAdmin\": false,\n        \"createdAt\": \"2024-04-13T04:04:06.153Z\",\n        \"updatedAt\": \"2024-04-13T04:04:06.153Z\"\n    },\n    {\n        \"_id\": \"661a0485e0b30313d7329edf\",\n        \"firstName\": \"srushti\",\n        \"lastName\": \"rank\",\n        \"gender\": \"Female\",\n        \"email\": \"susi@test.in\",\n        \"password\": \"$2b$10$F9pDpmw1aRh02yjAjtZdxevu4kDo9RhJP23d.jk6ua/.B8i0fdGve\",\n        \"mobileNo\": 24647353673,\n        \"isDelete\": false,\n        \"isAdmin\": false,\n        \"createdAt\": \"2024-04-13T04:05:25.535Z\",\n        \"updatedAt\": \"2024-04-13T04:05:25.535Z\"\n    },\n    {\n        \"_id\": \"661a04a1e0b30313d7329ee2\",\n        \"firstName\": \"priyank\",\n        \"lastName\": \"mayani\",\n        \"gender\": \"Male\",\n        \"email\": \"pilu@test.in\",\n        \"password\": \"$2b$10$RlkzdHCguyoXw8ctSU3EJuqoO5Ej2N6mrJVNKf0uDrGkoCksrhML6\",\n        \"mobileNo\": 6557362572,\n        \"isDelete\": false,\n        \"isAdmin\": false,\n        \"createdAt\": \"2024-04-13T04:05:53.848Z\",\n        \"updatedAt\": \"2024-04-13T04:05:53.848Z\"\n    },\n    {\n        \"_id\": \"661a04d5e0b30313d7329ee5\",\n        \"firstName\": \"prayag\",\n        \"lastName\": \"borda\",\n        \"gender\": \"Male\",\n        \"email\": \"prayag@test.in\",\n        \"password\": \"$2b$10$lrk7F05rkC/t3tmNSf7VMe.TD3U8.iUQPimbOX0ObulFjbTLZ/eVi\",\n        \"mobileNo\": 547573822,\n        \"isDelete\": false,\n        \"isAdmin\": false,\n        \"createdAt\": \"2024-04-13T04:06:45.210Z\",\n        \"updatedAt\": \"2024-04-13T04:06:45.210Z\"\n    },\n    {\n        \"_id\": \"661a051be0b30313d7329ee8\",\n        \"firstName\": \"akshay\",\n        \"lastName\": \"kakadiya\",\n        \"gender\": \"Male\",\n        \"email\": \"akshu@test.in\",\n        \"password\": \"$2b$10$IduR/m7.H2K7VR2Z1nzuIe4rCrD7FFfAFrmmC./MZGvMzbBD4dcua\",\n        \"mobileNo\": 5859635272,\n        \"isDelete\": false,\n        \"isAdmin\": false,\n        \"createdAt\": \"2024-04-13T04:07:55.267Z\",\n        \"updatedAt\": \"2024-04-13T04:07:55.267Z\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "get-User",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{utoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}user/user/get-User?userId=661a0436e0b30313d7329edc",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"user",
+										"get-User"
+									],
+									"query": [
+										{
+											"key": "userId",
+											"value": "661a0436e0b30313d7329edc"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-User",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}user/user/get-User?userId=661a0436e0b30313d7329edc",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"user",
+												"get-User"
+											],
+											"query": [
+												{
+													"key": "userId",
+													"value": "661a0436e0b30313d7329edc"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "328"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"148-7uQQv+STWYaNzeZkJFJ+9KM7Dis\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 13 Apr 2024 04:15:54 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"661a0436e0b30313d7329edc\",\n    \"firstName\": \"monika\",\n    \"lastName\": \"kathiriya\",\n    \"gender\": \"Female\",\n    \"email\": \"moni@test.in\",\n    \"password\": \"$2b$10$28cZ2rFqHSeIKcFcTDncXeLQepGkl.agU8Q05nasUagfhRCYEH9YO\",\n    \"mobileNo\": 464572653673,\n    \"isDelete\": false,\n    \"isAdmin\": false,\n    \"createdAt\": \"2024-04-13T04:04:06.153Z\",\n    \"updatedAt\": \"2024-04-13T04:04:06.153Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "update-User",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{utoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"lastName\":\"sojitra\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{basicUrl}}user/user/update-User?userId=661a0485e0b30313d7329edf",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"user",
+										"update-User"
+									],
+									"query": [
+										{
+											"key": "userId",
+											"value": "661a0485e0b30313d7329edf"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "update-User",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"lastName\":\"sojitra\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{basicUrl}}user/user/update-User?userId=661a0485e0b30313d7329edf",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"user",
+												"update-User"
+											],
+											"query": [
+												{
+													"key": "userId",
+													"value": "661a0485e0b30313d7329edf"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "376"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"178-1KrVFBIchID/1xhg6Nu9NRioCws\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 13 Apr 2024 04:17:23 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"user\": {\n        \"_id\": \"661a0485e0b30313d7329edf\",\n        \"firstName\": \"srushti\",\n        \"lastName\": \"sojitra\",\n        \"gender\": \"Female\",\n        \"email\": \"susi@test.in\",\n        \"password\": \"$2b$10$F9pDpmw1aRh02yjAjtZdxevu4kDo9RhJP23d.jk6ua/.B8i0fdGve\",\n        \"mobileNo\": 24647353673,\n        \"isDelete\": false,\n        \"isAdmin\": false,\n        \"createdAt\": \"2024-04-13T04:05:25.535Z\",\n        \"updatedAt\": \"2024-04-13T04:17:23.828Z\"\n    },\n    \"message\": \"User Updated Successfully...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "delete-User",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{utoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}user/user/delete-User?userId=661a051be0b30313d7329ee8",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"user",
+										"delete-User"
+									],
+									"query": [
+										{
+											"key": "userId",
+											"value": "661a051be0b30313d7329ee8"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "delete-User",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}user/user/delete-User?userId=661a051be0b30313d7329ee8",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"user",
+												"delete-User"
+											],
+											"query": [
+												{
+													"key": "userId",
+													"value": "661a051be0b30313d7329ee8"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "372"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"174-QBc9y1pnYefIEB6lF0ePZ7oG+o4\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 13 Apr 2024 04:18:43 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"user\": {\n        \"_id\": \"661a051be0b30313d7329ee8\",\n        \"firstName\": \"akshay\",\n        \"lastName\": \"kakadiya\",\n        \"gender\": \"Male\",\n        \"email\": \"akshu@test.in\",\n        \"password\": \"$2b$10$IduR/m7.H2K7VR2Z1nzuIe4rCrD7FFfAFrmmC./MZGvMzbBD4dcua\",\n        \"mobileNo\": 5859635272,\n        \"isDelete\": true,\n        \"isAdmin\": false,\n        \"createdAt\": \"2024-04-13T04:07:55.267Z\",\n        \"updatedAt\": \"2024-04-13T04:18:43.935Z\"\n    },\n    \"message\": \"User Deleted Succesfully...\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "product",
+					"item": [
+						{
+							"name": "get-All-Product",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{utoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}user/product/get-All-Product",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"product",
+										"get-All-Product"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-All-Product",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}user/product/get-All-Product",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"product",
+												"get-All-Product"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "2773"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"ad5-BDQ1C+2QzdP71rVb5tz16pbPdXs\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 04:02:35 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"totalCounts\": 9,\n    \"totalPages\": 1,\n    \"currentPage\": 1,\n    \"result\": [\n        {\n            \"_id\": \"6625daaa6a651beb42aac296\",\n            \"title\": \"Moduler Bathtub\",\n            \"description\": \"Dunder buy-in first invested\",\n            \"price\": 5770,\n            \"category\": [\n                \"aesthetics\",\n                \"traditional\"\n            ],\n            \"size\": \"46 cm,152 cm\",\n            \"color\": \"White,Blue,Green\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:34:02.213Z\",\n            \"updatedAt\": \"2024-04-22T03:34:02.213Z\"\n        },\n        {\n            \"_id\": \"6625db476a651beb42aac29a\",\n            \"title\": \"Round Neck T-shirt\",\n            \"description\": \"Creep procrastinating break support sky.\",\n            \"price\": 800,\n            \"category\": [\n                \"smooth\",\n                \"cotton\"\n            ],\n            \"size\": \"s, m, l\",\n            \"color\": \"White,Blue,Green\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:36:39.907Z\",\n            \"updatedAt\": \"2024-04-22T03:36:39.907Z\"\n        },\n        {\n            \"_id\": \"6625dbbb6a651beb42aac29e\",\n            \"title\": \"Check-Scarf\",\n            \"description\": \"Typically made from soft.\",\n            \"price\": 500,\n            \"category\": [\n                \"smooth\",\n                \"silk\"\n            ],\n            \"size\": \"s, m\",\n            \"color\": \"White,Blue,Black,Red\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:38:35.492Z\",\n            \"updatedAt\": \"2024-04-22T03:38:35.492Z\"\n        },\n        {\n            \"_id\": \"6625dc0f6a651beb42aac2a2\",\n            \"title\": \"Tote Bag\",\n            \"description\": \"Typically made from soft.\",\n            \"price\": 1000,\n            \"category\": [\n                \"unique\",\n                \"good\"\n            ],\n            \"size\": \"small, jumbo\",\n            \"color\": \"Blue,Black,gray\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:39:59.032Z\",\n            \"updatedAt\": \"2024-04-22T03:39:59.032Z\"\n        },\n        {\n            \"_id\": \"6625dc996a651beb42aac2a6\",\n            \"title\": \"Round Hat\",\n            \"description\": \"also known as a bowler hat or derby hat.\",\n            \"price\": 1500,\n            \"category\": [\n                \"unique\",\n                \"round\"\n            ],\n            \"size\": \"s, m\",\n            \"color\": \"Blue,Black,Gray,Pink, Purpule\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:42:17.513Z\",\n            \"updatedAt\": \"2024-04-22T03:42:17.513Z\"\n        },\n        {\n            \"_id\": \"6625dd816a651beb42aac2aa\",\n            \"title\": \"Sneakers\",\n            \"description\": \"Sneakers, the beloved footwear choice for comfort and style.\",\n            \"price\": 5000,\n            \"category\": [\n                \"fashion\",\n                \"footwear\"\n            ],\n            \"size\": \"s, m, l\",\n            \"color\": \"Blue,Black,Yello\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:46:09.117Z\",\n            \"updatedAt\": \"2024-04-22T03:46:09.117Z\"\n        },\n        {\n            \"_id\": \"6625ddf36a651beb42aac2ae\",\n            \"title\": \"Women Grey-Hill\",\n            \"description\": \" particular style or design of footwear.\",\n            \"price\": 2500,\n            \"category\": [\n                \"fashion\",\n                \"footwear\"\n            ],\n            \"size\": \"7, 8, 9, 10\",\n            \"color\": \"grey\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:48:03.021Z\",\n            \"updatedAt\": \"2024-04-22T03:48:03.021Z\"\n        },\n        {\n            \"_id\": \"6625de7d6a651beb42aac2b2\",\n            \"title\": \"Sports-Slacks\",\n            \"description\": \" the epitome of versatility and style in active attire.\",\n            \"price\": 3000,\n            \"category\": [\n                \"fashion\",\n                \"bottoms\"\n            ],\n            \"size\": \"28, 30 ,32, 34\",\n            \"color\": \"Grey,Black,Blue\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:50:21.254Z\",\n            \"updatedAt\": \"2024-04-22T03:50:21.254Z\"\n        },\n        {\n            \"_id\": \"6625df216a651beb42aac2b6\",\n            \"title\": \"Sleevless T-shirt\",\n            \"description\": \"clothing for warm weather and active lifestyles.\",\n            \"price\": 570,\n            \"category\": [\n                \"Smooth\",\n                \"Tops\"\n            ],\n            \"size\": \"s, m, l\",\n            \"color\": \"Grey,Green,White\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:53:05.700Z\",\n            \"updatedAt\": \"2024-04-22T03:53:05.700Z\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "get-Product",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{utoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}user/product/get-Product?productId=6625dc0f6a651beb42aac2a2",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"product",
+										"get-Product"
+									],
+									"query": [
+										{
+											"key": "productId",
+											"value": "6625dc0f6a651beb42aac2a2"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-Product",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}user/product/get-Product?productId=6625dc0f6a651beb42aac2a2",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"product",
+												"get-Product"
+											],
+											"query": [
+												{
+													"key": "productId",
+													"value": "6625dc0f6a651beb42aac2a2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "292"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"124-yZ7uRVFazIyO0WXLjzpG820wWm0\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 04:03:42 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"product\": {\n        \"_id\": \"6625dc0f6a651beb42aac2a2\",\n        \"title\": \"Tote Bag\",\n        \"description\": \"Typically made from soft.\",\n        \"price\": 1000,\n        \"category\": [\n            \"unique\",\n            \"good\"\n        ],\n        \"size\": \"small, jumbo\",\n        \"color\": \"Blue,Black,gray\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-22T03:39:59.032Z\",\n        \"updatedAt\": \"2024-04-22T03:39:59.032Z\"\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "cart",
+					"item": [
+						{
+							"name": "add-To-Cart",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{utoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"cartItem\":\"6625daaa6a651beb42aac296\",\r\n    \"quantity\":2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{basicUrl}}user/cart/add-To-Cart?=",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"cart",
+										"add-To-Cart"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "add-To-Cart",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"cartItem\":\"6625daaa6a651beb42aac296\",\r\n    \"quantity\":2\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{basicUrl}}user/cart/add-To-Cart",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"cart",
+												"add-To-Cart"
+											],
+											"query": [
+												{
+													"key": "",
+													"value": "",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "262"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"106-pXwSAtzdYcmnoe8J60VnSGU+aSA\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 04:17:08 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"cart\": {\n        \"user\": \"661a0436e0b30313d7329edc\",\n        \"cartItem\": \"6625daaa6a651beb42aac296\",\n        \"quantity\": 2,\n        \"isDelete\": false,\n        \"_id\": \"6625e4c4c1a297738eb3c250\",\n        \"createdAt\": \"2024-04-22T04:17:08.632Z\",\n        \"updatedAt\": \"2024-04-22T04:17:08.632Z\"\n    },\n    \"message\": \"Cart Added successfully...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "get-All-Cart",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{utoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}user/cart/get-All-Cart",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"cart",
+										"get-All-Cart"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-All-Cart",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}user/cart/get-All-Cart",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"cart",
+												"get-All-Cart"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "3165"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"c5d-zFKT/rugSrzF1kUOpMQZH5aoRsc\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 04:19:49 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"6625e4c4c1a297738eb3c250\",\n        \"user\": {\n            \"_id\": \"661a0436e0b30313d7329edc\",\n            \"firstName\": \"monika\",\n            \"lastName\": \"kathiriya\",\n            \"gender\": \"Female\",\n            \"email\": \"moni@test.in\",\n            \"password\": \"$2b$10$28cZ2rFqHSeIKcFcTDncXeLQepGkl.agU8Q05nasUagfhRCYEH9YO\",\n            \"mobileNo\": 464572653673,\n            \"isDelete\": false,\n            \"isAdmin\": false,\n            \"createdAt\": \"2024-04-13T04:04:06.153Z\",\n            \"updatedAt\": \"2024-04-13T04:04:06.153Z\"\n        },\n        \"cartItem\": {\n            \"_id\": \"6625daaa6a651beb42aac296\",\n            \"title\": \"Moduler Bathtub\",\n            \"description\": \"Dunder buy-in first invested\",\n            \"price\": 5770,\n            \"category\": [\n                \"aesthetics\",\n                \"traditional\"\n            ],\n            \"size\": \"46 cm,152 cm\",\n            \"color\": \"White,Blue,Green\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:34:02.213Z\",\n            \"updatedAt\": \"2024-04-22T03:34:02.213Z\"\n        },\n        \"quantity\": 2,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-22T04:17:08.632Z\",\n        \"updatedAt\": \"2024-04-22T04:17:08.632Z\"\n    },\n    {\n        \"_id\": \"6625e4ebc1a297738eb3c255\",\n        \"user\": {\n            \"_id\": \"661a0436e0b30313d7329edc\",\n            \"firstName\": \"monika\",\n            \"lastName\": \"kathiriya\",\n            \"gender\": \"Female\",\n            \"email\": \"moni@test.in\",\n            \"password\": \"$2b$10$28cZ2rFqHSeIKcFcTDncXeLQepGkl.agU8Q05nasUagfhRCYEH9YO\",\n            \"mobileNo\": 464572653673,\n            \"isDelete\": false,\n            \"isAdmin\": false,\n            \"createdAt\": \"2024-04-13T04:04:06.153Z\",\n            \"updatedAt\": \"2024-04-13T04:04:06.153Z\"\n        },\n        \"cartItem\": {\n            \"_id\": \"6625db476a651beb42aac29a\",\n            \"title\": \"Round Neck T-shirt\",\n            \"description\": \"Creep procrastinating break support sky.\",\n            \"price\": 800,\n            \"category\": [\n                \"smooth\",\n                \"cotton\"\n            ],\n            \"size\": \"s, m, l\",\n            \"color\": \"White,Blue,Green\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:36:39.907Z\",\n            \"updatedAt\": \"2024-04-22T03:36:39.907Z\"\n        },\n        \"quantity\": 3,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-22T04:17:47.441Z\",\n        \"updatedAt\": \"2024-04-22T04:17:47.441Z\"\n    },\n    {\n        \"_id\": \"6625e50fc1a297738eb3c25a\",\n        \"user\": {\n            \"_id\": \"661a0436e0b30313d7329edc\",\n            \"firstName\": \"monika\",\n            \"lastName\": \"kathiriya\",\n            \"gender\": \"Female\",\n            \"email\": \"moni@test.in\",\n            \"password\": \"$2b$10$28cZ2rFqHSeIKcFcTDncXeLQepGkl.agU8Q05nasUagfhRCYEH9YO\",\n            \"mobileNo\": 464572653673,\n            \"isDelete\": false,\n            \"isAdmin\": false,\n            \"createdAt\": \"2024-04-13T04:04:06.153Z\",\n            \"updatedAt\": \"2024-04-13T04:04:06.153Z\"\n        },\n        \"cartItem\": {\n            \"_id\": \"6625dc0f6a651beb42aac2a2\",\n            \"title\": \"Tote Bag\",\n            \"description\": \"Typically made from soft.\",\n            \"price\": 1000,\n            \"category\": [\n                \"unique\",\n                \"good\"\n            ],\n            \"size\": \"small, jumbo\",\n            \"color\": \"Blue,Black,gray\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:39:59.032Z\",\n            \"updatedAt\": \"2024-04-22T03:39:59.032Z\"\n        },\n        \"quantity\": 4,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-22T04:18:23.487Z\",\n        \"updatedAt\": \"2024-04-22T04:18:23.487Z\"\n    },\n    {\n        \"_id\": \"6625e527c1a297738eb3c25f\",\n        \"user\": {\n            \"_id\": \"661a0436e0b30313d7329edc\",\n            \"firstName\": \"monika\",\n            \"lastName\": \"kathiriya\",\n            \"gender\": \"Female\",\n            \"email\": \"moni@test.in\",\n            \"password\": \"$2b$10$28cZ2rFqHSeIKcFcTDncXeLQepGkl.agU8Q05nasUagfhRCYEH9YO\",\n            \"mobileNo\": 464572653673,\n            \"isDelete\": false,\n            \"isAdmin\": false,\n            \"createdAt\": \"2024-04-13T04:04:06.153Z\",\n            \"updatedAt\": \"2024-04-13T04:04:06.153Z\"\n        },\n        \"cartItem\": {\n            \"_id\": \"6625dd816a651beb42aac2aa\",\n            \"title\": \"Sneakers\",\n            \"description\": \"Sneakers, the beloved footwear choice for comfort and style.\",\n            \"price\": 5000,\n            \"category\": [\n                \"fashion\",\n                \"footwear\"\n            ],\n            \"size\": \"s, m, l\",\n            \"color\": \"Blue,Black,Yello\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:46:09.117Z\",\n            \"updatedAt\": \"2024-04-22T03:46:09.117Z\"\n        },\n        \"quantity\": 2,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-22T04:18:47.073Z\",\n        \"updatedAt\": \"2024-04-22T04:18:47.073Z\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "get-Cart",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{utoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}user/cart/get-Cart?cartId=6625e4c4c1a297738eb3c250",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"cart",
+										"get-Cart"
+									],
+									"query": [
+										{
+											"key": "cartId",
+											"value": "6625e4c4c1a297738eb3c250"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-Cart",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}user/cart/get-Cart?cartId=6625e4c4c1a297738eb3c250",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"cart",
+												"get-Cart"
+											],
+											"query": [
+												{
+													"key": "cartId",
+													"value": "6625e4c4c1a297738eb3c250"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "490"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1ea-8bgmpTKzWHGEGnVuGK4g3pMhBGM\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 04:21:06 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"6625e4c4c1a297738eb3c250\",\n    \"user\": \"661a0436e0b30313d7329edc\",\n    \"cartItem\": {\n        \"_id\": \"6625daaa6a651beb42aac296\",\n        \"title\": \"Moduler Bathtub\",\n        \"description\": \"Dunder buy-in first invested\",\n        \"price\": 5770,\n        \"category\": [\n            \"aesthetics\",\n            \"traditional\"\n        ],\n        \"size\": \"46 cm,152 cm\",\n        \"color\": \"White,Blue,Green\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-22T03:34:02.213Z\",\n        \"updatedAt\": \"2024-04-22T03:34:02.213Z\"\n    },\n    \"quantity\": 2,\n    \"isDelete\": false,\n    \"createdAt\": \"2024-04-22T04:17:08.632Z\",\n    \"updatedAt\": \"2024-04-22T04:17:08.632Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "update-cart",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{utoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"quantity\":3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{basicUrl}}user/cart/update-cart?cartId=6625e4c4c1a297738eb3c250",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"cart",
+										"update-cart"
+									],
+									"query": [
+										{
+											"key": "cartId",
+											"value": "6625e4c4c1a297738eb3c250"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "update-cart",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"quantity\":3\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{basicUrl}}user/cart/update-cart?cartId=6625e4c4c1a297738eb3c250",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"cart",
+												"update-cart"
+											],
+											"query": [
+												{
+													"key": "cartId",
+													"value": "6625e4c4c1a297738eb3c250"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "547"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"223-xvLELxWsA2yC2W/QBhBIDUULR2U\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 04:23:08 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"cart\": {\n        \"_id\": \"6625e4c4c1a297738eb3c250\",\n        \"user\": \"661a0436e0b30313d7329edc\",\n        \"cartItem\": {\n            \"_id\": \"6625daaa6a651beb42aac296\",\n            \"title\": \"Moduler Bathtub\",\n            \"description\": \"Dunder buy-in first invested\",\n            \"price\": 5770,\n            \"category\": [\n                \"aesthetics\",\n                \"traditional\"\n            ],\n            \"size\": \"46 cm,152 cm\",\n            \"color\": \"White,Blue,Green\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:34:02.213Z\",\n            \"updatedAt\": \"2024-04-22T03:34:02.213Z\"\n        },\n        \"quantity\": 3,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-22T04:17:08.632Z\",\n        \"updatedAt\": \"2024-04-22T04:23:08.317Z\"\n    },\n    \"message\": \"Cart Item Updated SuccessFully.....\"\n}"
+								}
+							]
+						},
+						{
+							"name": "delete-Cart",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{utoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}user/cart/delete-Cart?cartId=6625e527c1a297738eb3c25f",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"cart",
+										"delete-Cart"
+									],
+									"query": [
+										{
+											"key": "cartId",
+											"value": "6625e527c1a297738eb3c25f"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "delete-Cart",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}user/cart/delete-Cart?cartId=6625e527c1a297738eb3c25f",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"cart",
+												"delete-Cart"
+											],
+											"query": [
+												{
+													"key": "cartId",
+													"value": "6625e527c1a297738eb3c25f"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "556"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"22c-WYfXptGR6lptWx+7BBjxfBPeBK8\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 04:24:18 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"cart\": {\n        \"_id\": \"6625e527c1a297738eb3c25f\",\n        \"user\": \"661a0436e0b30313d7329edc\",\n        \"cartItem\": {\n            \"_id\": \"6625dd816a651beb42aac2aa\",\n            \"title\": \"Sneakers\",\n            \"description\": \"Sneakers, the beloved footwear choice for comfort and style.\",\n            \"price\": 5000,\n            \"category\": [\n                \"fashion\",\n                \"footwear\"\n            ],\n            \"size\": \"s, m, l\",\n            \"color\": \"Blue,Black,Yello\",\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-22T03:46:09.117Z\",\n            \"updatedAt\": \"2024-04-22T03:46:09.117Z\"\n        },\n        \"quantity\": 2,\n        \"isDelete\": true,\n        \"createdAt\": \"2024-04-22T04:18:47.073Z\",\n        \"updatedAt\": \"2024-04-22T04:24:17.916Z\"\n    },\n    \"message\": \"Cart Deleted Successfully......\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "order",
+					"item": [
+						{
+							"name": "add-New-Order",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{utoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}user/order/add-New-Order",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"order",
+										"add-New-Order"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "add-New-Order",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}user/order/add-New-Order",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"order",
+												"add-New-Order"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "500"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1f4-toMfC2LMh48PzPrxVkOHgOnVfeo\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 04:38:58 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"newOrder\": {\n        \"user\": \"661a0436e0b30313d7329edc\",\n        \"items\": [\n            {\n                \"product\": \"6625daaa6a651beb42aac296\",\n                \"quantity\": 3,\n                \"_id\": \"6625e9e2f7ed7b366a774e76\"\n            },\n            {\n                \"product\": \"6625db476a651beb42aac29a\",\n                \"quantity\": 3,\n                \"_id\": \"6625e9e2f7ed7b366a774e77\"\n            },\n            {\n                \"product\": \"6625dc0f6a651beb42aac2a2\",\n                \"quantity\": 4,\n                \"_id\": \"6625e9e2f7ed7b366a774e78\"\n            }\n        ],\n        \"totalAmount\": 23710,\n        \"isDelete\": false,\n        \"_id\": \"6625e9e2f7ed7b366a774e75\",\n        \"createdAt\": \"2024-04-22T04:38:58.366Z\",\n        \"updatedAt\": \"2024-04-22T04:38:58.366Z\"\n    },\n    \"message\": \"Order Place Successfuly...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "get-All-Order",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{utoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}user/order/get-All-Order",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"order",
+										"get-All-Order"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-All-Order",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}user/order/get-All-Order",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"order",
+												"get-All-Order"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "450"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1c2-3BLL+DoZRumZMifvYn0WBUwmRNw\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 04:40:08 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"6625e9e2f7ed7b366a774e75\",\n        \"user\": \"661a0436e0b30313d7329edc\",\n        \"items\": [\n            {\n                \"product\": \"6625daaa6a651beb42aac296\",\n                \"quantity\": 3,\n                \"_id\": \"6625e9e2f7ed7b366a774e76\"\n            },\n            {\n                \"product\": \"6625db476a651beb42aac29a\",\n                \"quantity\": 3,\n                \"_id\": \"6625e9e2f7ed7b366a774e77\"\n            },\n            {\n                \"product\": \"6625dc0f6a651beb42aac2a2\",\n                \"quantity\": 4,\n                \"_id\": \"6625e9e2f7ed7b366a774e78\"\n            }\n        ],\n        \"totalAmount\": 23710,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-22T04:38:58.366Z\",\n        \"updatedAt\": \"2024-04-22T04:38:58.366Z\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "get-Order",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{utoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}user/order/get-Order?orderId=6625e9e2f7ed7b366a774e75",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"order",
+										"get-Order"
+									],
+									"query": [
+										{
+											"key": "orderId",
+											"value": "6625e9e2f7ed7b366a774e75"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-Order",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}user/order/get-Order?orderId=6625e9e2f7ed7b366a774e75",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"order",
+												"get-Order"
+											],
+											"query": [
+												{
+													"key": "orderId",
+													"value": "6625e9e2f7ed7b366a774e75"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "448"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1c0-hEQci7x43Rs55jO2HDWRecm+g5k\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 04:41:16 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"6625e9e2f7ed7b366a774e75\",\n    \"user\": \"661a0436e0b30313d7329edc\",\n    \"items\": [\n        {\n            \"product\": \"6625daaa6a651beb42aac296\",\n            \"quantity\": 3,\n            \"_id\": \"6625e9e2f7ed7b366a774e76\"\n        },\n        {\n            \"product\": \"6625db476a651beb42aac29a\",\n            \"quantity\": 3,\n            \"_id\": \"6625e9e2f7ed7b366a774e77\"\n        },\n        {\n            \"product\": \"6625dc0f6a651beb42aac2a2\",\n            \"quantity\": 4,\n            \"_id\": \"6625e9e2f7ed7b366a774e78\"\n        }\n    ],\n    \"totalAmount\": 23710,\n    \"isDelete\": false,\n    \"createdAt\": \"2024-04-22T04:38:58.366Z\",\n    \"updatedAt\": \"2024-04-22T04:38:58.366Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "delete-Order",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{utoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}user/order/delete-Order?orderId=6625e9e2f7ed7b366a774e75",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"order",
+										"delete-Order"
+									],
+									"query": [
+										{
+											"key": "orderId",
+											"value": "6625e9e2f7ed7b366a774e75"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "delete-Order",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}user/order/delete-Order?orderId=6625e9e2f7ed7b366a774e75",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"order",
+												"delete-Order"
+											],
+											"query": [
+												{
+													"key": "orderId",
+													"value": "6625e9e2f7ed7b366a774e75"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "499"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1f3-lyu3dLVONUfyclCepRYG5zNf+j0\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 04:42:40 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"order\": {\n        \"_id\": \"6625e9e2f7ed7b366a774e75\",\n        \"user\": \"661a0436e0b30313d7329edc\",\n        \"items\": [\n            {\n                \"product\": \"6625daaa6a651beb42aac296\",\n                \"quantity\": 3,\n                \"_id\": \"6625e9e2f7ed7b366a774e76\"\n            },\n            {\n                \"product\": \"6625db476a651beb42aac29a\",\n                \"quantity\": 3,\n                \"_id\": \"6625e9e2f7ed7b366a774e77\"\n            },\n            {\n                \"product\": \"6625dc0f6a651beb42aac2a2\",\n                \"quantity\": 4,\n                \"_id\": \"6625e9e2f7ed7b366a774e78\"\n            }\n        ],\n        \"totalAmount\": 23710,\n        \"isDelete\": true,\n        \"createdAt\": \"2024-04-22T04:38:58.366Z\",\n        \"updatedAt\": \"2024-04-22T04:42:40.718Z\"\n    },\n    \"message\": \"Order Deleted Successfully...\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "review",
+					"item": [
+						{
+							"name": "add-New-Review",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{utoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"product\":\"6625daaa6a651beb42aac296\",\r\n    \"comment\":\"good product\",\r\n    \"rating\":4\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{basicUrl}}user/review/add-New-Review",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"review",
+										"add-New-Review"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "add-New-Review",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"product\":\"6625daaa6a651beb42aac296\",\r\n    \"comment\":\"good product\",\r\n    \"rating\":4\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{basicUrl}}user/review/add-New-Review",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"review",
+												"add-New-Review"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "278"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"116-vOvOZKTNmAklITPhfk2VOTRC4ks\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 06:03:28 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"review\": {\n        \"user\": \"661a0436e0b30313d7329edc\",\n        \"product\": \"6625daaa6a651beb42aac296\",\n        \"rating\": 4,\n        \"comment\": \"good product\",\n        \"isDelete\": false,\n        \"_id\": \"6625fdb093968c71322ea926\",\n        \"createdAt\": \"2024-04-22T06:03:28.068Z\",\n        \"updatedAt\": \"2024-04-22T06:03:28.068Z\"\n    },\n    \"Message\": \"Review is Added...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "get-All-Review",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{utoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}user/review/get-All-Review",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"review",
+										"get-All-Review"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-All-Review",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}user/review/get-All-Review",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"review",
+												"get-All-Review"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "484"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1e4-kSw8gRlMNZ7WBcaZmTrOIfn+XVU\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 06:06:40 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"6625fdb093968c71322ea926\",\n        \"user\": \"661a0436e0b30313d7329edc\",\n        \"product\": \"6625daaa6a651beb42aac296\",\n        \"rating\": 4,\n        \"comment\": \"good product\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-22T06:03:28.068Z\",\n        \"updatedAt\": \"2024-04-22T06:03:28.068Z\"\n    },\n    {\n        \"_id\": \"6625fe0d93968c71322ea92a\",\n        \"user\": \"661a0436e0b30313d7329edc\",\n        \"product\": \"6625db476a651beb42aac29a\",\n        \"rating\": 3,\n        \"comment\": \"very smooth and fresh\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-22T06:05:01.972Z\",\n        \"updatedAt\": \"2024-04-22T06:05:01.972Z\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "delete-Review",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{utoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}user/review/delete-Review?reviewId=6625fe0d93968c71322ea92a",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"review",
+										"delete-Review"
+									],
+									"query": [
+										{
+											"key": "reviewId",
+											"value": "6625fe0d93968c71322ea92a"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "delete-Review",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}user/review/delete-Review?Id=6625fe0d93968c71322ea92a",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"review",
+												"delete-Review"
+											],
+											"query": [
+												{
+													"key": "Id",
+													"value": "6625fe0d93968c71322ea92a"
+												}
+											]
+										}
+									},
+									"status": "Accepted",
+									"code": 202,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "301"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"12d-PUuyyBj3KYiVZWQlyHD5Rcxd91M\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 06:08:28 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"review\": {\n        \"_id\": \"6625fe0d93968c71322ea92a\",\n        \"user\": \"661a0436e0b30313d7329edc\",\n        \"product\": \"6625db476a651beb42aac29a\",\n        \"rating\": 3,\n        \"comment\": \"very smooth and fresh\",\n        \"isDelete\": true,\n        \"createdAt\": \"2024-04-22T06:05:01.972Z\",\n        \"updatedAt\": \"2024-04-22T06:08:28.853Z\"\n    },\n    \"Message\": \"Review is Deleted SuccessFully...\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "wishlist",
+					"item": [
+						{
+							"name": "add-New-Wishlist",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{utoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"product\":\"6625daaa6a651beb42aac296\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{basicUrl}}user/wishlist/add-New-Wishlist",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"wishlist",
+										"add-New-Wishlist"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "add-New-Wishlist",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"product\":\"6625daaa6a651beb42aac296\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{basicUrl}}user/wishlist/add-New-Wishlist",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"wishlist",
+												"add-New-Wishlist"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "246"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"f6-8rBB1gru/NISX9GMudjHOFX4VvM\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 06:20:13 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"wishlist\": {\n        \"user\": \"661a0436e0b30313d7329edc\",\n        \"product\": \"6625daaa6a651beb42aac296\",\n        \"isDelete\": false,\n        \"_id\": \"6626019d54b9674cf2559bfb\",\n        \"createdAt\": \"2024-04-22T06:20:13.223Z\",\n        \"updatedAt\": \"2024-04-22T06:20:13.223Z\"\n    },\n    \"Message\": \"Wishlist is Added...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "get-All-Wishlist",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{utoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}user/wishlist/get-All-Wishlist",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"wishlist",
+										"get-All-Wishlist"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-All-Wishlist",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}user/wishlist/get-All-Wishlist",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"wishlist",
+												"get-All-Wishlist"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "604"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"25c-eUSQPYsSRQcUNwoKKh5ObGqYwko\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 06:22:10 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"6626019d54b9674cf2559bfb\",\n        \"user\": \"661a0436e0b30313d7329edc\",\n        \"product\": \"6625daaa6a651beb42aac296\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-22T06:20:13.223Z\",\n        \"updatedAt\": \"2024-04-22T06:20:13.223Z\"\n    },\n    {\n        \"_id\": \"662601bc54b9674cf2559bff\",\n        \"user\": \"661a0436e0b30313d7329edc\",\n        \"product\": \"6625db476a651beb42aac29a\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-22T06:20:44.621Z\",\n        \"updatedAt\": \"2024-04-22T06:20:44.621Z\"\n    },\n    {\n        \"_id\": \"662601d254b9674cf2559c03\",\n        \"user\": \"661a0436e0b30313d7329edc\",\n        \"product\": \"6625dbbb6a651beb42aac29e\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-22T06:21:06.613Z\",\n        \"updatedAt\": \"2024-04-22T06:21:06.613Z\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "delete-Wishlist",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{utoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{basicUrl}}user/wishlist/delete-Wishlist?Id=662601d254b9674cf2559c03",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"wishlist",
+										"delete-Wishlist"
+									],
+									"query": [
+										{
+											"key": "Id",
+											"value": "662601d254b9674cf2559c03"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "delete-Wishlist",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{basicUrl}}user/wishlist/delete-Wishlist?Id=662601d254b9674cf2559c03",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"wishlist",
+												"delete-Wishlist"
+											],
+											"query": [
+												{
+													"key": "Id",
+													"value": "662601d254b9674cf2559c03"
+												}
+											]
+										}
+									},
+									"status": "Accepted",
+									"code": 202,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "247"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"f7-CLSyRXE1aLsAQF59BMicwZpDahY\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 06:24:00 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"wishlist\": {\n        \"_id\": \"662601d254b9674cf2559c03\",\n        \"user\": \"661a0436e0b30313d7329edc\",\n        \"product\": \"6625dbbb6a651beb42aac29e\",\n        \"isDelete\": true,\n        \"createdAt\": \"2024-04-22T06:21:06.613Z\",\n        \"updatedAt\": \"2024-04-22T06:24:00.255Z\"\n    },\n    \"Message\": \"Wishlist is Deleted...\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "contact",
+					"item": [
+						{
+							"name": "send-Request-User",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{utoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"dhaval\",\r\n    \"email\":\"dhaval@test.in\",\r\n    \"phone\":1234567899,\r\n    \"message\":\"Nice Product...\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{basicUrl}}user/contact/send-Request-User",
+									"host": [
+										"{{basicUrl}}user"
+									],
+									"path": [
+										"contact",
+										"send-Request-User"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "send-Request-User",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\":\"dhaval\",\r\n    \"email\":\"dhaval@test.in\",\r\n    \"phone\":1234567899,\r\n    \"message\":\"Nice Product...\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{basicUrl}}user/contact/send-Request-User",
+											"host": [
+												"{{basicUrl}}user"
+											],
+											"path": [
+												"contact",
+												"send-Request-User"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "289"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"121-jESoiopIfkbtt+23lQfO+MTHZ7o\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 22 Apr 2024 06:35:10 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"admin\": {\n        \"user\": \"661a0436e0b30313d7329edc\",\n        \"name\": \"dhaval\",\n        \"email\": \"dhaval@test.in\",\n        \"phone\": 1234567899,\n        \"message\": \"Nice Product...\",\n        \"_id\": \"6626051d57a0ecf029c43f17\",\n        \"createdAt\": \"2024-04-22T06:35:10.015Z\",\n        \"updatedAt\": \"2024-04-22T06:35:10.015Z\"\n    },\n    \"message\": \"New Request added SuccesFully...\"\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "basicUrl",
+			"value": "http://localhost:2020/api/",
+			"type": "string"
+		},
+		{
+			"key": "atoken",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoiNjYxOWZiNjQ3NzNkNWM2MGFkODQ5YTRiIiwiaWF0IjoxNzEyOTc5OTA1fQ.LfmdAOIQIg101nKc_lo2oHsGRcdzZWoE2RUYtuKETGo",
+			"type": "string"
+		},
+		{
+			"key": "utoken",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjFhMDQzNmUwYjMwMzEzZDczMjllZGMiLCJpYXQiOjE3MTI5ODE0MjZ9.izmKdlrfD8G0tKrF0BQCsgtGLmg1GxUkYW7tTYhS-4E",
+			"type": "string"
+		}
+	]
+}
